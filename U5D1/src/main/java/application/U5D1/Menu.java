@@ -3,7 +3,7 @@ package application.U5D1;
 import application.U5D1.drinks.Drink;
 import application.U5D1.entities.MenuElement;
 import application.U5D1.pizzas.Pizza;
-import application.U5D1.entities.Topping;
+import Topping;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,13 +1,19 @@
 package application.U5D1.pizzas;
 
 import application.U5D1.entities.MenuElement;
+
+import application.U5D1.toppings.Topping;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.context.annotation.Bean;
+
+import java.util.List;
+
 @Getter
 @Setter
-public class Margerita extends MenuElement {
+public class Margerita extends MenuElement implements Pizza  {
     private boolean xl;
+    private List<Topping> toppings;
+    private String name;
 
 
 
@@ -18,9 +24,11 @@ public class Margerita extends MenuElement {
 
 
 
-    public Margerita(int calories, double price , boolean xl) {
+    public Margerita(int calories, double price, String name , List<Topping> toppings , boolean xl) {
         super(calories, price);
+        this.name = name;
         this.xl = xl;
+        this.toppings = toppings;
     }
 
 
@@ -34,8 +42,4 @@ public class Margerita extends MenuElement {
 }
 
 
-//    @Bean
-//    Pizza margherita() {
-//        return new Pizza("margherita" ,1000, 6.00);
-//    }
-//}
+
