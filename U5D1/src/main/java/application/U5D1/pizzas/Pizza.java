@@ -1,15 +1,15 @@
-package application.U5D1.entities;
+package application.U5D1.pizzas;
 
 
-import application.U5D1.Menu;
+import application.U5D1.entities.MenuElement;
+import application.U5D1.entities.Topping;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import java.util.List;
 @Getter
 @Setter
-public  class Pizza  extends Menu {
+public  class Pizza  extends MenuElement {
     private String name;
     private String tomato;
     private String mozzarella;

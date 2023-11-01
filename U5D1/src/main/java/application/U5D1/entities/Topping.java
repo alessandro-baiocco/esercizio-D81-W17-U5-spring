@@ -1,14 +1,11 @@
 package application.U5D1.entities;
 
-import application.U5D1.Menu;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
-public class Topping extends Menu {
+public class Topping extends MenuElement {
     private String name;
     private double price = 0.50;
 

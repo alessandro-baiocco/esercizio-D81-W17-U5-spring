@@ -14,6 +14,12 @@ public class U5D1Application {
 
 		SpringApplication.run(U5D1Application.class, args);
 
+
+
+
+
+
+
 		configMenu();
 
 
@@ -24,10 +30,11 @@ public class U5D1Application {
 	public static void configMenu(){
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(U5D1Application.class);
 
-		log.info("\n" + ctx.getBean("getMenu").toString());
+		log.info("\n" + ctx.getBean("getMenu"));
 
 
 
+		ctx.close();
 	}
 
 }
